@@ -1,0 +1,81 @@
+<div class="content-text challenge-text mlB hackdown-container theme-m"><div class="challenge-body-html"><div class="challenge_problem_statement"><div class="msB challenge_problem_statement_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_LineBox {display: table!important}
+.MathJax_SVG_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.</p>
+
+<p><strong>Example</strong> <br>
+<span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.656ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 2435.1 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path><g transform="translate(878,0)"><path stroke-width="1"   ></path></g><g transform="translate(1934,0)"><path stroke-width="1"   ></path></g></g></svg></span> <br>
+<span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="21.011ex" height="2.843ex" style="vertical-align: -0.838ex;" viewBox="0 -863.1 9046.6 1223.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path><g transform="translate(529,0)"><path stroke-width="1"   ></path></g><g transform="translate(1258,0)"><path stroke-width="1"   ></path></g><g transform="translate(2315,0)"><path stroke-width="1"   ></path></g><g transform="translate(2593,0)"><path stroke-width="1"   ></path></g><g transform="translate(3094,0)"><path stroke-width="1"   ></path></g><g transform="translate(3539,0)"><path stroke-width="1"   ></path></g><g transform="translate(4039,0)"><path stroke-width="1"   ></path></g><g transform="translate(4484,0)"><path stroke-width="1"   ></path></g><g transform="translate(4985,0)"><path stroke-width="1"   ></path></g><g transform="translate(5430,0)"><path stroke-width="1"   ></path></g><g transform="translate(5931,0)"><path stroke-width="1"   ></path></g><g transform="translate(6376,0)"><path stroke-width="1"   ></path></g><g transform="translate(6876,0)"><path stroke-width="1"   ></path></g><g transform="translate(7321,0)"><path stroke-width="1"   ></path></g><g transform="translate(7822,0)"><path stroke-width="1"   ></path></g><g transform="translate(8267,0)"><path stroke-width="1"   ></path></g><g transform="translate(8768,0)"><path stroke-width="1"   ></path></g></g></svg></span>   </p>
+
+<p>There is one pair of color <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path></g></svg></span> and one of color <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-4-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path></g></svg></span>.  There are three odd socks left, one of each color.  The number of pairs is <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-5-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path></g></svg></span>.  </p>
+
+<p><strong>Function Description</strong>  </p>
+
+<p>Complete the <em>sockMerchant</em> function in the editor below.     </p>
+
+<p>sockMerchant has the following parameter(s):  </p>
+
+<ul>
+<li><em>int n:</em> the number of socks in the pile   </li>
+<li><em>int ar[n]:</em> the colors of each sock   </li>
+</ul>
+
+<p><strong>Returns</strong>   </p>
+
+<ul>
+<li><em>int:</em> the number of pairs   </li>
+</ul></div></div></div><div class="challenge_input_format"><div class="msB challenge_input_format_title"><p><strong>Input Format</strong></p></div><div class="msB challenge_input_format_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_LineBox {display: table!important}
+.MathJax_SVG_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>The first line contains an integer <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path></g></svg></span>, the number of socks represented in <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.278ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 981 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path><g transform="translate(529,0)"><path stroke-width="1"   ></path></g></g></svg></span>. <br>
+The second line contains <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path></g></svg></span> space-separated integers, <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-4-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.375ex" height="2.843ex" style="vertical-align: -0.838ex;" viewBox="0 -863.1 1883.5 1223.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path><g transform="translate(529,0)"><path stroke-width="1" ></path></g><g transform="translate(981,0)"><path stroke-width="1"   ></path></g><g transform="translate(1259,0)"><path stroke-width="1"   ></path></g><g transform="translate(1605,0)"><path stroke-width="1"   ></path></g></g></svg></span>, the colors of the socks in the pile.</p></div></div></div><div class="challenge_constraints"><div class="msB challenge_constraints_title"><p><strong>Constraints</strong></p></div><div class="msB challenge_constraints_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_LineBox {display: table!important}
+.MathJax_SVG_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><ul>
+<li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="12.241ex" height="2.343ex" style="vertical-align: -0.505ex;" viewBox="0 -791.3 5270.6 1008.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"   ></path><g transform="translate(778,0)"><path stroke-width="1"   ></path></g><g transform="translate(1834,0)"><path stroke-width="1"   ></path></g><g transform="translate(2712,0)"><path stroke-width="1"   ></path></g><g transform="translate(3769,0)"><path stroke-width="1"   ></path><path stroke-width="1"    transform="translate(500,0)"></path><path stroke-width="1"    transform="translate(1001,0)"></path></g></g></svg></span></li>
+<li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" i ></path></g></g></svg></span></li>
+</ul></div></div></div><div class="challenge_sample_input"><div class="msB challenge_sample_input_title"><p><strong>Sample Input</strong></p></div><div class="msB challenge_sample_input_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_LineBox {display: table!important}
+.MathJax_SVG_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><pre><code>STDIN                       Function
+-----                       --------
+9                           n = 9
+10 20 20 10 10 30 50 10 20  ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+</code></pre></div></div></div><div class="challenge_sample_output"><div class="msB challenge_sample_output_title"><p><strong>Sample Output</strong></p></div><div class="msB challenge_sample_output_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><pre><code>3
+</code></pre></div></div></div><div class="challenge_explanation"><div class="msB challenge_explanation_title"><p><strong>Explanation</strong></p></div><div class="msB challenge_explanation_body"><div class="hackdown-content"><style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+.MathJax_SVG_LineBox {display: table!important}
+.MathJax_SVG_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+</style><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p><img src="https://s3.amazonaws.com/hr-challenge-images/25168/1474122392-c7b9097430-sock.png" alt="sock.png" title=""></p>
+
+<p>There are three pairs of socks.</p></div></div></div></div></div>
