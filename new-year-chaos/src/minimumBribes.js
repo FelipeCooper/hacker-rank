@@ -4,7 +4,7 @@ function minimumBribes(array) {
   for (var i = array.length - 1; i >= 0; i--) {
     if (array[i] - i > 3) {
       console.log("Too chaotic");
-      return;
+      return "Too chaotic";
     }
     if (array[i] > i + 1) {
       bribes += array[i] - (i + 1);
