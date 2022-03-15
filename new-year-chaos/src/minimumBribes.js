@@ -1,20 +1,22 @@
 function minimumBribes(array) {
   let bribes = 0;
-  let min = array.length;
-  for (var i = array.length - 1; i >= 0; i--) {
-    if (array[i] - i > 3) {
-      console.log("Too chaotic");
-      return "Too chaotic";
+
+  for (let i = 0; i < array.length; i++) {
+    console.log(`i = ${i} / array[i] = ${array[i]}`)
+    if ((array[i] - (i + 1)) > 2) return "Too chaotic";
+    
+    for (let j = array[i] - 2; j < i; j++) {
+      console.log(`j = ${j} / array[j] = ${array[j]}`)
+      if (array[j] > array[i]) {
+        bribes++;
+      }
     }
-    if (array[i] > i + 1) {
-      bribes += array[i] - (i + 1);
-    } else if (min > array[i]) {
-      min = array[i];
-    } else {
-      bribes++;
-    }
+    console.log(`bribes = ${bribes}`)
   }
+
   return bribes;
 }
 
 module.exports = minimumBribes;
+
+//Ass.: Fábio/Biava/Cooper
